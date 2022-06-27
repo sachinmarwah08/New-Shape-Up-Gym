@@ -25,13 +25,13 @@ const Contact = () => {
   return (
     <div id="contact" className="w-full lg:h-screen">
       <div className="max-w-[1240px] m-auto px-2 py-16 w-full ">
-        <p className="text-xl tracking-widest uppercase text-[#5651e5]">
+        <p className="text-xl font-medium  tracking-widest uppercase text-[#5651e5]">
           Contact
         </p>
         <h2 className="py-4">Get In Touch</h2>
         <div className="grid lg:grid-cols-5 gap-8">
           {/* left */}
-          <div className="col-span-3 lg:col-span-2 w-full h-full shadow-xl shadow-gray-400 rounded-xl p-4">
+          <div className="col-span-3 lg:col-span-2 w-full h-full shadow-xl shadow-gray-400 rounded-xl p-1">
             <div className="lg:p-4 h-full ">
               <div>
                 <Image
@@ -41,8 +41,8 @@ const Contact = () => {
                 />
               </div>
               <div>
-                <h2 className="py-2">Clint Briley</h2>
-                <p>Front-End Developer</p>
+                <h2 className="py-2 uppercase">Manish Kumar</h2>
+                <p className="uppercase font-medium">Gym Owner</p>
                 <p className="py-4">
                   Lorem ipsum, dolor sit amet consectetur adipisicing elit.
                   Natus laborum reprehenderit hic, laudantium ab praesentium,
@@ -50,12 +50,12 @@ const Contact = () => {
                   iste veritatis aliquam? Labore, possimus ut? Natus laborum
                   reprehenderit hic, laudantium ab praesentium, quo, suscipit ad
                   tempora animi non. Perferendis incidunt quos iste veritatis
-                  aliquam? Labore, possimus ut?
+                  aliquam? Labore, possimus ut
                 </p>
               </div>
               <div>
-                <p className="uppercase pt-6">Connect With Me</p>
-                <div className="flex items-center justify-between py-4">
+                <p className="uppercase  pt-6">Connect With Me</p>
+                <div className="flex items-center  justify-between py-4">
                   <a
                     href="https://www.linkedin.com/in/clint-briley-50056920a/"
                     target="_blank"
@@ -102,7 +102,7 @@ const Contact = () => {
                   <div className="flex flex-col">
                     <label className="uppercase text-sm py-2">Name</label>
                     <input
-                      className="border-2 rounded-lg p-3 flex border-gray-300"
+                      className="border-[2px] rounded-lg p-3 flex border-gray-300"
                       type="text"
                       name="name"
                       value={name}
@@ -114,7 +114,7 @@ const Contact = () => {
                       Phone Number
                     </label>
                     <input
-                      className="border-2 rounded-lg p-3 flex border-gray-300"
+                      className="border-[2px] rounded-lg p-3 flex border-gray-300"
                       type="text"
                       name="phone"
                       value={phone}
@@ -125,7 +125,7 @@ const Contact = () => {
                 <div className="flex flex-col py-2">
                   <label className="uppercase text-sm py-2">Email</label>
                   <input
-                    className="border-2 rounded-lg p-3 flex border-gray-300"
+                    className="border-[2px] rounded-lg p-3 flex border-gray-300"
                     type="email"
                     name="email"
                     value={email}
@@ -135,7 +135,7 @@ const Contact = () => {
                 <div className="flex flex-col py-2">
                   <label className="uppercase text-sm py-2">Subject</label>
                   <input
-                    className="border-2 rounded-lg p-3 flex border-gray-300"
+                    className="border-[2px]  rounded-lg p-3 flex border-gray-300"
                     type="text"
                     name="subject"
                     value={subject}
@@ -145,7 +145,7 @@ const Contact = () => {
                 <div className="flex flex-col py-2">
                   <label className="uppercase text-sm py-2">Message</label>
                   <textarea
-                    className="border-2 rounded-lg p-3 border-gray-300"
+                    className="border-[2px]  rounded-lg p-3 border-gray-300"
                     rows="10"
                     name="message"
                     value={message}

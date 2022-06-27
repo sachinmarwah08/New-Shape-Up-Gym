@@ -50,13 +50,13 @@ const Navbar = () => {
       style={{ backgroundColor: `${navBg}` }}
       className={
         shadow
-          ? "fixed w-full h-20 shadow-xl z-[100] ease-in-out duration-300"
-          : "fixed w-full h-20 z-[100]"
+          ? "fixed w-full h-[4rem] shadow-xl z-[100] ease-in-out duration-300"
+          : "fixed w-full h-[4rem] z-[100]"
       }
     >
       <div className="flex justify-between items-center w-full h-full px-2 2xl:px-16">
         <Link href="/">
-          <a className="uppercase font-bold text-[35px]">Shape up</a>
+          <a className="uppercase font-bold  text-[35px]">Shape up</a>
           {/* <Image src={NavLogo} width="87" height="35" alt="/" /> */}
         </Link>
         <div>
@@ -84,7 +84,7 @@ const Navbar = () => {
           <div
             style={{ color: `${linkColor}` }}
             onClick={handleNav}
-            className="md:hidden"
+            className="md:hidden cursor-pointer"
           >
             <AiOutlineMenu size={25} />
           </div>
@@ -102,7 +102,7 @@ const Navbar = () => {
         <div
           className={
             nav
-              ? " fixed left-0 top-0 w-[75%] sm:w-[60%] md:w-[45%] h-screen bg-[#ecf0f3] p-10 ease-in duration-500"
+              ? " fixed left-0 top-0 w-[75%]  sm:w-[60%] md:w-[45%] h-screen bg-[#ecf0f3] p-10 ease-in duration-500"
               : "fixed left-[-100%] top-0 p-10 ease-in duration-500"
           }
         >
@@ -110,7 +110,8 @@ const Navbar = () => {
             <div className="flex w-full items-center justify-between">
               <Link href="/">
                 <a>
-                  <Image src={NavLogo} width="87" height="35" alt="/" />
+                  {/* <Image src={NavLogo} width="87" height="35" alt="/" /> */}
+                  <a className="uppercase font-bold text-[30px]">Shape up</a>
                 </a>
               </Link>
               <div
@@ -159,7 +160,7 @@ const Navbar = () => {
                 </li>
               </Link>
             </ul>
-            <div className="pt-40">
+            <div className="pt-28">
               <p className="uppercase tracking-widest text-[#5651e5]">
                 Let&#39;s Connect
               </p>

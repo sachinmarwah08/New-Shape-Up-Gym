@@ -6,17 +6,20 @@ import { FaGithub, FaLinkedinIn } from "react-icons/fa";
 
 const Main = () => {
   return (
-    <div id="home" className="w-full h-screen text-center">
-      <div className="max-w-[1240px] w-full h-full mx-auto p-2 flex justify-center items-center">
+    <div id="home" className="w-full  h-screen text-center">
+      <div className="absolute md:bg-[transparent] opacity-90 bg-[url('/assets/cover2.jpeg')] bg-top bg-cover bg-no-repeat w-full justify-evenly flex h-full lg:h-full"></div>
+      <div className="max-w-[1240px] relative w-full h-full mx-auto p-2 flex justify-center items-center">
         <div>
-          <p className="uppercase text-sm tracking-widest text-gray-600">
+          <p className="uppercase text-sm tracking-widest font-medium text-white/80">
             LET&#39;S BUILD SOMETHING TOGETHER
           </p>
           {/* <h1 className="py-4 text-gray-700">
             Hi, I&#39;m <span className="text-[#5651e5]"> Clint</span>
           </h1> */}
-          <h1 className="py-2 text-gray-700">Fitness Help Me Feel Better</h1>
-          <p className="py-4 text-gray-600 sm:max-w-[70%] m-auto">
+          <h1 className="py-2 pt-4 text-white/90">
+            Fitness Help Me Feel Better
+          </h1>
+          <p className="py-4 text-gray-800 text-white/80 sm:max-w-[70%] m-auto">
             Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolores
             nisi minus perspiciatis optio, id deserunt.
           </p>
@@ -26,7 +29,7 @@ const Main = () => {
               target="_blank"
               rel="noreferrer"
             >
-              <div className="rounded-full shadow-lg shadow-gray-400 p-6 cursor-pointer hover:scale-110 ease-in duration-300">
+              <div className="rounded-full shadow-lg shadow-gray-400 bg-white/95 p-6 cursor-pointer hover:scale-110 ease-in duration-300">
                 <FaLinkedinIn />
               </div>
             </a>
@@ -35,17 +38,17 @@ const Main = () => {
               target="_blank"
               rel="noreferrer"
             >
-              <div className="rounded-full shadow-lg shadow-gray-400 p-6 cursor-pointer hover:scale-110 ease-in duration-300">
+              <div className="rounded-full shadow-lg shadow-gray-400 bg-white/95 p-6 cursor-pointer hover:scale-110 ease-in duration-300">
                 <FaGithub />
               </div>
             </a>
             <Link href="/#contact">
-              <div className="rounded-full shadow-lg shadow-gray-400 p-6 cursor-pointer hover:scale-110 ease-in duration-300">
+              <div className="rounded-full shadow-lg shadow-gray-400 bg-white/95  p-6 cursor-pointer hover:scale-110 ease-in duration-300">
                 <AiOutlineMail />
               </div>
             </Link>
             <Link href="/resume">
-              <div className="rounded-full shadow-lg shadow-gray-400 p-6 cursor-pointer hover:scale-110 ease-in duration-300">
+              <div className="rounded-full shadow-lg shadow-gray-400 bg-white/95 p-6 cursor-pointer hover:scale-110 ease-in duration-300">
                 <BsFillPersonLinesFill />
               </div>
             </Link>
